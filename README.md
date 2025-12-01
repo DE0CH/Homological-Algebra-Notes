@@ -22,7 +22,7 @@ This project relies on the support and collaboration of the following individual
 - [Zifan Hua](https://github.com/Alex222222222222) for fixing typos and improving the documents;
 -  [Quanwen Chen](https://github.com/Steven1677) for contributing to the GitHub workflows; and
 - Qixuan Fang for reading the first drafts of the notes and offering feedback;
--  [@hbghlyj](https://github.com/hbghlyj), [Julia Irvine](https://github.com/JuliaScythe), and [Richard Wang](https://github.com/rclw)  for pointing out various typos.
+-  [@hbghlyj](https://github.com/hbghlyj), [Julia Irvine](https://github.com/JuliaScythe), [Richard Wang](https://github.com/rclw), and [Deyao Chen](https://github.com/DE0CH) for pointing out various typos.
 
 ## How to Compile the Notes
 
