@@ -338,11 +338,11 @@ With this proposition, we can prove that an abelian category has enough projecti
   If $I$ is an injective abelian group, then $hom_Ab (R, I)$ is an injective #rrm.
 ]
 #proof[
-  By @hom-module, $hom_Ab (R, I)$ is indeed a right $R$-module. Note that $hom_Ab (R, -)$ is right adjoint to $(- tpr R)$, which is simply the forgetful functor $ModR -> Ab$ and is thus exact. Therefore $hom_Ab (R, I)$ is injective in $RMod$.
+  By @hom-module, $hom_Ab (R, I)$ is indeed a right $R$-module. Note that $hom_Ab (R, -)$ is right adjoint to $(- tpr R)$, which is simply the forgetful functor $ModR -> Ab$ and is thus exact. Therefore by the previous proposition, $hom_Ab (R, I)$ is injective in $ModR$.
 ]
 
 #example[
-  $hom_Ab (R, QQ over ZZ)$ is injective.
+  $hom_Ab (R, QQ over ZZ)$ is injective in $ModR$.
 ]
 
 #proposition[
@@ -350,13 +350,14 @@ With this proposition, we can prove that an abelian category has enough projecti
 ]
 
 #proof[
+  Since $RMod$ is equivalent to $ModR^(op)$ (see @opposite-ring-mod), it suffices to prove that $ModR$ has enough injectives for any $R$. 
   Define map
   $
-    I : RMod &-> RMod, \
+    I : ModR &-> ModR, \
     M &|-> product_(homr(M, hom_Ab (R, QQ over ZZ))) hom_Ab (R, QQ over ZZ).
   $
 
-  For any left $R$-module $M$,
+  For any right $R$-module $M$,
   $I(M)$ is injective as a product of injectives, and there is a canonical morphism
   $
     e_M: M &-> I(M ), \
@@ -364,7 +365,7 @@ With this proposition, we can prove that an abelian category has enough projecti
   $
   // Exercise: $e_M$ is one-to-one (mono). (like what we did before.) [TODO]
   We would like to show that $e_M$ is an injective function.
-  We only need to show that for any $0 != m in M$, there exists $phi : M -> hom_Ab (R, QQ over ZZ)$ such that $phi(m) != 0$. Notice that we have $ phi in homr(M, hom_Ab (R, QQ over ZZ)) iso hom_Ab (M, QQ over ZZ) $
-  as before.
-  Hence we only need to find some $phi : M -> QQ over ZZ$ in $Ab$ so that $phi(m) != 0$, which is given by @map-to-q-over-z.
+  We only need to show that for any $0 != m in M$, there exists $phi : M -> hom_Ab (R, QQ over ZZ)$ such that $phi(m) != 0$. Then since $ phi in homr(M, hom_Ab (R, QQ over ZZ)) iso hom_Ab (M, QQ over ZZ) $
+  by @tensor-hom,
+  we only need to find some $phi : M -> QQ over ZZ$ in $Ab$ so that $phi(m) != 0$, which is given by @map-to-q-over-z.
 ]

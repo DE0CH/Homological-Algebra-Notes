@@ -745,8 +745,10 @@ In other words, $P$ is projective if for any #sest $ses(X, Y, Z)$ in $cA$, $ ses
 
 #note[
   If $cA = SMod$ for some ring $S$, we have observed that $S$ (as an object of $SMod$) is a compact, projective generator. In this case, $R = end_S (S)$. We observe that any module homomorphism $phi: S -> S$ is uniquely determined by $phi(1) in S$ with $phi(s) = s phi(1)$, and the composition of two homomorphisms $phi_1 , phi_2 : S-> S$ is in the opposite direction of multiplication in $S$: $ phi_1 (phi_2(s)) = s phi_2(1) phi_1(1) $
-  Therefore, $R = end_S (S) = S^op$. Thus, indeed, we have $SMod$ is equivalent to $ModR$, which is $Mod$-$S^op$.
+  Therefore, $R = end_S (S) = S^op$. Thus, indeed, we have $SMod$ is equivalent to $ModR$, which is $ModS^op$.
 ]
+<opposite-ring-mod>
+
 
 // #remark[
 //   Using the definition of equivalence, you want to construct another functor in the opposite direction and show their composites are natural isomorphic to identity functors. Alternatively, you might also prove that the functor is fully faithful and essentially surjective, if you can.
@@ -817,7 +819,6 @@ In other words, $P$ is projective if for any #sest $ses(X, Y, Z)$ in $cA$, $ ses
   For example, consider $veck$ for some field $k$. Then $k$ and $k^n$ are both compact, projective generators of $veck$. Then $k$ and $M_n (k)$ ($n times n$ matrices over $k$) both are equivalent to $veck$ as categories.
   // #TODO
 ]
-
 
 
 #theorem("Freyd-Mitchell Embedding Theorem")[
