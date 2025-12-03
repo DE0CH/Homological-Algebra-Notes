@@ -366,6 +366,6 @@ With this proposition, we can prove that an abelian category has enough projecti
   // Exercise: $e_M$ is one-to-one (mono). (like what we did before.) [TODO]
   We would like to show that $e_M$ is an injective function.
   We only need to show that for any $0 != m in M$, there exists $phi : M -> hom_Ab (R, QQ over ZZ)$ such that $phi(m) != 0$. Then since $ phi in homr(M, hom_Ab (R, QQ over ZZ)) iso hom_Ab (M, QQ over ZZ) $
-  by @tensor-hom,
+  by #thmref(<tensor-hom>),
   we only need to find some $phi : M -> QQ over ZZ$ in $Ab$ so that $phi(m) != 0$, which is given by @map-to-q-over-z.
 ]
