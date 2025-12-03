@@ -239,7 +239,7 @@ For most of our homological algebra to work, an abelian category needs to have e
 #proof[@rotman[Corollary 3.35] and @notes[Corollary 5.9].
   Let $M$ be an injective $R$-module, and let $m in M$ and
   $r in R without brace.l 0 brace.r$. Set $J eq r R$ (which is an ideal of $R$) and define
-  $f colon J arrow.r M$ by $f lr((r)) eq m$. By Baer’s Criterion, we may
+  $f colon J arrow.r M$ by $f lr((r)) eq m$. By #thmref(<baer-cri>), we may
   extend $f$ to a homomorphism $tilde(f) colon R arrow.r M$. Then
   $
     m eq f lr((r)) = tilde(f)(r)eq tilde(f) lr((r dot.op 1)) eq r dot.op tilde(f) lr((1)).
@@ -254,7 +254,7 @@ For most of our homological algebra to work, an abelian category needs to have e
   $m eq f lr((r))$. Then since $M$ is divisible, there is some $m' in M$
   such that $m eq r m'$. Define $tilde(f) colon R arrow.r M$ by
   $tilde(f) lr((1)) eq m'$. Clearly $tilde(f)$ is an extension of $f$, so
-  $M$ is injective by Baer’s Criterion.
+  $M$ is injective by #thmref(<baer-cri>).
 ]
 
 #corollary[
